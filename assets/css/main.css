@@ -111,7 +111,7 @@ body {
     height: 20px;
     top: -40px;
     left: 0;
-    background-image: url('/assets/img/1.svg');
+    background-image: url('/madseven/assets/img/1.svg');
     background-repeat: no-repeat;
 }
 
@@ -120,7 +120,7 @@ body {
     height: 4px;
     top: -32px;
     left: 12px;
-    background-image: url('/assets/img/2.svg');
+    background-image: url('/madseven/assets/img/2.svg');
     background-repeat: repeat;
 }
 
@@ -129,7 +129,7 @@ body {
     height: 20px;
     top: -40px;
     right: 0;
-    background-image: url('/assets/img/3.svg');
+    background-image: url('/madseven/assets/img/3.svg');
     background-repeat: no-repeat;
 }
 
