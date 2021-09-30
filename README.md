@@ -1,1 +1,2 @@
-# madseven_test
+# Madseven Test
+Небольшое тестовое задание для компании Madseven
