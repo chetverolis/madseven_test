@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: max-content;
+}
+
+#content > .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1096px;
+    width: 100%;
+    height: 1096px;
+    margin: 84px 0 20px 0;
+    position: relative;
+}
+
+#content > .wrapper > .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 352px;
+    position: relative;
+    background-color: gray;
+    margin: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 68px;
+    font-weight: 600;
+    color: var(--white_05);
+}
+
+#content > .wrapper > .box:nth-child(2),
+#content > .wrapper > .box:nth-child(4) {
+    margin: 0 20px 20px 0;
+}
+
+#content > .wrapper > .box:nth-child(3),
+#content > .wrapper > .box:nth-child(5) {
+    margin: 0 20px 0 0;
+}
+
+#content > .wrapper > .box:nth-child(6) {
+    margin: 0 0 20px 0;
+}
+
+#content > .wrapper > .box:nth-child(7) {
+    margin: 0 0 20px 0;
+}
+
+#content > .wrapper > .box.m-b392 {
+    margin-bottom: 392px;
+}
+
+#content > .wrapper > .box.m-t372 {
+    margin-top: 372px;
+}
+
+#content > .wrapper > .box > span.size {
+    position: absolute;
+    top: calc(50% + 68px);
+    left: 50%;
+    font-size: 17px;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+/* Wrapper Width */
+#content > .wrapper > div > #wrapper_size {
+    position: absolute;
+    top: -74px;
+    left: 50%;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--white_05);
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+#content > .wrapper > div > .leftArrow,
+#content > .wrapper > div > .rightArrow,
+#content > .wrapper > div > .center {
+    position: absolute;
+    background-size: contain;
+    opacity: .5;
+}
+
+#content > .wrapper > div > .leftArrow {
+    width: 12px;
+    height: 20px;
+    top: -40px;
+    left: 0;
+    background-image: url('/assets/img/1.svg');
+    background-repeat: no-repeat;
+}
+
+#content > .wrapper > div > .center {
+    width: calc(100% - 24px);
+    height: 4px;
+    top: -32px;
+    left: 12px;
+    background-image: url('/assets/img/2.svg');
+    background-repeat: repeat;
+}
+
+#content > .wrapper > div > .rightArrow {
+    width: 12px;
+    height: 20px;
+    top: -40px;
+    right: 0;
+    background-image: url('/assets/img/3.svg');
+    background-repeat: no-repeat;
+}
+
+/* Animation */
+#content > .wrapper > .box.animate {
+    animation: flash 1500ms ease-in-out infinite;
+    -webkit-animation: flash 1500ms ease-in-out infinite;
+}
+
+#content > .wrapper > .box.animate:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+#content > .wrapper > .box.animate:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+#content > .wrapper > .box.animate:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+#content > .wrapper > .box.animate:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+#content > .wrapper > .box.animate:nth-child(6) {
+    animation-delay: 500ms;
+}
+
+/* Footer */
+#footer > #button {
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 16px 8px 16px;
+    background-color: #b3b3b3;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--white_08);
+    background-color: var(--white_01)
+}
+
+#footer > #button:hover {
+    cursor: pointer;
+    background-color: var(--white_02)
+}
+
+/* Media */
+@media (max-width: 1116px) {
+    #content > .wrapper {
+        max-width: 724px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #content > .wrapper > .box:nth-child(2n+2) {
+        margin: 0 20px 0 0;
+    }
+
+    #content > .wrapper > .box:not(:nth-child(2n+2)) {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 743px) {
+    #content > .wrapper {
+        max-width: 352px;
+    }
+
+    #content > .wrapper > .box:nth-child(2n+2) {
+        margin: 0 0 20px 0;
+    }
+
+    #content > .wrapper > .box:not(:nth-child(2n+2)) {
+        margin: 0 0 20px 0;
+    }
+}
